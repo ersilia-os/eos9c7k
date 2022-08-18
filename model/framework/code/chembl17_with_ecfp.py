@@ -6,7 +6,7 @@ import sys
 
 
 input_file = open(sys.argv[1], 'r')
-Lines = input_file.readlines()
+Lines = input_file.readlines()[1:]
 fp     = 'ECfp4'
 db     = 'ChEMBL17_DrugBank17_UNPD17'
 nnc    = '100'
