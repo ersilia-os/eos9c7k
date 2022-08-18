@@ -1,1 +1,1 @@
-python $1/code/main.py $2 $3
+python $1/code/chembl17_with_ecfp.py $2 $3
