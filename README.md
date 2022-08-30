@@ -8,7 +8,7 @@
 Look for 100 nearest neighbors, according to ECFP4 Tanimoto similarity, medicinal chemistry database 17-subsets of ChEMBL, DrugBank and UNPD.
 - Input: SMILES 
 - Output: SMILES 
-- Model type: 
+- Model type: Generative
 - Training set: 
 - Mode of training: Online
 
@@ -21,7 +21,7 @@ The GPL-v3 license applies to all parts of the repository.
 
 # History 
 - We have developed a python script that accesses the web server available at https://gdb-medchem-simsearch.gdb.tools/ to run the predictions.
-- `requests` and `BeautifulSoup` Python libraries are used to post the input to the server and fetch the results.
+- `requests` and `BeautifulSoup` libraries are used to post the input to the server and fetch the results.
 - Model was incorporated to Ersilia on 8/22/2022
 
 # About us
