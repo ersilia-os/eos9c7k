@@ -1,28 +1,27 @@
-# Model title
+# Similarity search in the 17-subsets of ChEMBL, DrugBank and UNPD
 ## Model identifiers
-- Slug:
-- Ersilia ID: 
-- Tags: 
+- Slug: medchem17-similarity
+- Ersilia ID: eos9c7k
+- Tags: Similarity
 
 # Model description
-Short description of the model in one or two sentences.
-- Input:
-- Output: {unit and description of output) 
-- Model type: (Regression or Classification)
-- Training set: (number of compounds and link to the training data)
-- Mode of training: (is it pretrained? that is were the checkpoints downloaded and used to train the model? or is it retrained? that is trained from scratch with an updated data)
+Look for 100 nearest neighbors, according to ECFP4 Tanimoto similarity, medicinal chemistry database 17-subsets of ChEMBL, DrugBank and UNPD.
+- Input: SMILES 
+- Output: SMILES 
+- Model type: 
+- Training set: 
+- Mode of training: Online
 
 # Source code
-Cite the source publication.
-- Code: include link to the source code
-- Checkpoints: include the link to the checkpoints used if model is a pretrained model
+- Code: The model uses the web application available at https://gdb-medchem-simsearch.gdb.tools/
+- Checkpoints: N/A
 
 # License
-State the licences used which are GPL v3 license used by Ersilia and the license used by the source code, if any exists. Use [this guide]() on how to license new models to be incorporated into Ersilia's model hub 
+The GPL-v3 license applies to all parts of the repository.
 
 # History 
-- State the date when the model was downloaded and incorporated into Ersilia.
-- List any essential steps/modifications to the original code
+- The model uses the web application available at https://gdb-medchem-simsearch.gdb.tools/
+- Model was incorporated to Ersilia on 8/22/2022
 
 # About us
 The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
