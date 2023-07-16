@@ -28,5 +28,11 @@
     "Publication": "https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031",
     "Source Code": "https://gdb-medchem-simsearch.gdb.tools/",
     "License": "None",
-    "Contributor": "Amna-28"
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9c7k.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9c7k",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
 }
