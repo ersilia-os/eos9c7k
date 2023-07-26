@@ -7,10 +7,10 @@ import sys
 
 input_file = open(sys.argv[1], 'r')
 Lines = input_file.readlines()[1:]
+print('lines:', Lines)
 fp     = 'ECfp4'
 db     = 'ChEMBL17_DrugBank17_UNPD17'
 nnc    = '100'
-
 
 data = []
 for input_smiles in Lines:
