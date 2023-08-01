@@ -46,7 +46,7 @@ def String(x):
 class Model(object):
     def __init__(self):
         self.DATA_FILE = "_data.csv"
-        self.OUTPUT_FILE = "_output.json"
+        self.OUTPUT_FILE = "_output.csv"
         self.RUN_FILE = "_run.sh"
         self.LOG_FILE = "run.log"
 
