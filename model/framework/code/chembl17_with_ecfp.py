@@ -11,7 +11,6 @@ fp     = 'ECfp4'
 db     = 'ChEMBL17_DrugBank17_UNPD17'
 nnc    = '100'
 
-
 data = []
 for input_smiles in Lines:
     input_smiles = input_smiles.strip() 
