@@ -85,17 +85,14 @@ class Model(object):
                 cmd, stdout=fp, stderr=fp, shell=True, env=os.environ
             ).wait()
         with open(output_file, "r") as f:
-            result = json.load(f)
-        R = []
-        for r in result:
-            if r is None:
-                r_ = None
-            else:
-                r_ = [String(x) for x in r]
-            R += [{"products": r_}]
+            reader = csv.reader(f)
+            h = next(reader)
+            R = []
+            for r in reader:
+                R += [{"similarity": [String(x) for x in r]}]
         result = {
             "result": R,
-            "meta": None
+            "meta": {"similarity": h}
         }
         shutil.rmtree(tmp_folder)
         return result
