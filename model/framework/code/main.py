@@ -1,40 +1,40 @@
-# imports
-import os
+from bs4 import BeautifulSoup
+import requests
 import csv
-import joblib
 import sys
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
+import urllib
 
-# parse arguments
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+# Input Parameters
+input_file = open(sys.argv[1], 'r')
+Lines = input_file.readlines()[1:]
+fp     = 'ECfp4'
+db     = 'ChEMBL17_DrugBank17_UNPD17'
+nnc    = '100'
 
-# current file directory
-root = os.path.dirname(os.path.abspath(__file__))
+data = []
+for input_smiles in Lines:
+    input_smiles = input_smiles.strip() 
+    url_encoded_smiles = urllib.parse.quote(input_smiles)
+    url = 'https://gdb-chembl-simsearch.gdb.tools/search?smi=' + url_encoded_smiles +  '&fp=' + fp + '&db=' + db + '&nnc=' + nnc
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text, features = 'html.parser')
+    results = soup.find_all('script')
+    T = str(results[-1]).splitlines()
+    T = [i for i in T if not ('molData+' not in i)]
+    del T[0]  # first row is input SMILE 
+    smiles_list = []
+    similarity_indices = []
+    for i in T:
+        x = i.split('+\"')
+        x1 = x[1].split(" ")
+        x2 = x1[0]
+        smiles_list.append(x2.strip(' ')) 
+        similarity_indices.append(x[3].strip('\"')) 
+    data+= [[smiles_list, similarity_indices]]
 
-# checkpoints directory
-checkpoints_dir = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
-
-# read checkpoints (here, simply an integer number: 42)
-ckpt = joblib.load(os.path.join(checkpoints_dir, "checkpoints.joblib"))
-
-# model to be run (here, calculate the Molecular Weight and add ckpt (42) to it)
-def my_model(smiles_list, ckpt):
-    return [MolWt(Chem.MolFromSmiles(smi))+ckpt for smi in smiles_list]
-    
-# read SMILES from .csv file, assuming one column with header
-with open(input_file, "r") as f:
-    reader = csv.reader(f)
-    next(reader) # skip header
-    smiles_list = [r[0] for r in reader]
-    
-# run model
-outputs = my_model(smiles_list, ckpt)
-
-# write output in a .csv file
-with open(output_file, "w") as f:
+header = ["sim-{0}".format(i+1) for i in range(len(smiles_list))]
+with open(sys.argv[2], 'w') as f:
     writer = csv.writer(f)
-    writer.writerow(["value"]) # header
-    for o in outputs:
-        writer.writerow([o])
+    writer.writerow(header)
+    for d in data:
+        writer.writerow(d[0])
