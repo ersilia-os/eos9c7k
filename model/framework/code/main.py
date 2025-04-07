@@ -32,7 +32,7 @@ for input_smiles in Lines:
         similarity_indices.append(x[3].strip('\"')) 
     data+= [[smiles_list, similarity_indices]]
 
-header = ["sim-{0}".format(i+1) for i in range(len(smiles_list))]
+header = [f"smiles_{i:02}" for i in range(len(smiles_list))]
 with open(sys.argv[2], 'w') as f:
     writer = csv.writer(f)
     writer.writerow(header)
