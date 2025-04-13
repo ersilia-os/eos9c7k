@@ -4,21 +4,18 @@
     "Status": "Ready",
     "Title": "Similarity search in ChEMBL, DrugBank and UNPD",
     "Description": "Given a molecule, this model for its 100 nearest neighbors, according to ECFP4 Tanimoto similarity, in the medicinal chemistry database ChEMBL17\\_DrugBank17\\_UNPD17. This combined database contains all the compounds from the three collections (DrugBank, ChEMBL22 and Universal natural product directory (UNPD)) with up to 17 heavy atoms. It features a total of 128k compounds. The whole ChEMBL17\\_DrugBank17\\_UNPD17 database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.\n",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Online",
     "Source Type": "External",
+    "Task": "Sampling",
+    "Subtask": "Similarity search",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
     "Input Dimension": 1,
-    "Task": "Sampling",
-    "Subtask": "Similarity search",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
+    "Input Shape": "Single",
     "Output": [
         "Compound"
     ],
@@ -30,20 +27,23 @@
         "ChEMBL",
         "DrugBank"
     ],
-    "Publication": "https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
+    "Publication": "https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031",
     "Source Code": "https://gdb-medchem-simsearch.gdb.tools/",
     "License": "None",
     "Contributor": "Amna-28",
     "Incorporation Date": "2022-08-18",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9c7k.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9c7k",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9c7k.zip",
-    "Deployment": [
-        "Local"
     ]
 }
