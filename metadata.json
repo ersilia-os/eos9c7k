@@ -3,7 +3,7 @@
     "Slug": "medchem17-similarity",
     "Status": "Ready",
     "Title": "Similarity search in ChEMBL, DrugBank and UNPD",
-    "Description": "Given a molecule, this model for its 100 nearest neighbors, according to ECFP4 Tanimoto similarity, in the medicinal chemistry database ChEMBL17\\_DrugBank17\\_UNPD17. This combined database contains all the compounds from the three collections (DrugBank, ChEMBL22 and Universal natural product directory (UNPD)) with up to 17 heavy atoms. It features a total of 128k compounds. The whole ChEMBL17\\_DrugBank17\\_UNPD17 database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.\n",
+    "Description": "Given a molecule, this model for its 100 nearest neighbors, according to ECFP4 Tanimoto similarity, in the medicinal chemistry database ChEMBL17\\_DrugBank17\\_UNPD17. This combined database contains all the compounds from the three collections (DrugBank, ChEMBL22 and Universal natural product directory (UNPD)) with up to 17 heavy atoms. It features a total of 128k compounds. The whole ChEMBL17\\_DrugBank17\\_UNPD17 database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.",
     "Deployment": [
         "Local"
     ],
