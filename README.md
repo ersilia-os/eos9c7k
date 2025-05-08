@@ -50,8 +50,12 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `249`
-- **Image Size (Mb):** `210.25`
+- **Image Size (Mb):** `210.17`
 
+**Computational Performance (seconds):**
+- 10 inputs: `38.43`
+- 100 inputs: `901.62`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://gdb-medchem-simsearch.gdb.tools/](https://gdb-medchem-simsearch.gdb.tools/)
