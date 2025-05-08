@@ -52,10 +52,6 @@ _10 of 100 columns are shown_
 - **Environment Size (Mb):** `248`
 - **Image Size (Mb):** `210.25`
 
-**Computational Performance (seconds):**
-- 4 inputs: `67.05`
-- 20 inputs: `201.93`
-- 100 inputs: `916.69`
 
 ### References
 - **Source Code**: [https://gdb-medchem-simsearch.gdb.tools/](https://gdb-medchem-simsearch.gdb.tools/)
