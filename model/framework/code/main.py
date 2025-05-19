@@ -29,8 +29,12 @@ for input_smiles in Lines:
         x1 = x[1].split(" ")
         x2 = x1[0]
         smiles_list.append(x2.strip(' ')) 
-        similarity_indices.append(x[3].strip('\"')) 
-    data+= [[smiles_list, similarity_indices]]
+        similarity_indices.append(float(x[3].strip('\"')))
+    paired = list(zip(smiles_list, similarity_indices))
+    paired.sort(key=lambda x: (-x[1], x[0]))
+    sorted_smiles_list = [smi for smi, _ in paired]
+    sorted_similarity_indices = [sim for _, sim in paired]
+    data += [[sorted_smiles_list, sorted_similarity_indices]]
 
 header = [f"smiles_{i:02}" for i in range(len(smiles_list))]
 with open(sys.argv[2], 'w') as f:
