@@ -2,8 +2,7 @@
 
 Given a molecule, this model for its 100 nearest neighbors, according to ECFP4 Tanimoto similarity, in the medicinal chemistry database ChEMBL17\_DrugBank17\_UNPD17. This combined database contains all the compounds from the three collections (DrugBank, ChEMBL22 and Universal natural product directory (UNPD)) with up to 17 heavy atoms. It features a total of 128k compounds. The whole ChEMBL17\_DrugBank17\_UNPD17 database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.
 
-This model was incorporated on 2022-08-18.
-
+This model was incorporated on 2022-08-18.Last packaged on 2025-10-22.
 
 ## Information
 ### Identifiers
@@ -51,11 +50,11 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `329`
-- **Image Size (Mb):** `222.27`
+- **Image Size (Mb):** `290.52`
 
 **Computational Performance (seconds):**
-- 10 inputs: `38.77`
-- 100 inputs: `1005.73`
+- 10 inputs: `30.01`
+- 100 inputs: `286.71`
 - 10000 inputs: `-1`
 
 ### References
