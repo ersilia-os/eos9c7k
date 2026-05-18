@@ -59,7 +59,7 @@ _10 of 100 columns are shown_
 
 ### References
 - **Source Code**: [https://gdb-medchem-simsearch.gdb.tools/](https://gdb-medchem-simsearch.gdb.tools/)
-- **Publication**: [https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031](https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031)
+- **Publication**: [https://doi.org/10.1002/minf.201900031](https://doi.org/10.1002/minf.201900031)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2019`
 - **Ersilia Contributor:** [Amna-28](https://github.com/Amna-28)
