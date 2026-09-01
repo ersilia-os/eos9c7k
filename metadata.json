@@ -40,7 +40,7 @@
     "Contributor": "Amna-28",
     "Incorporation Date": "2022-08-18",
     "Last Packaging Date": "2026-09-01",
-    "Release": "v1.0.0",
+    "Release": "v2.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9c7k.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9c7k",
     "Docker Architecture": [
