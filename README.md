@@ -28,16 +28,16 @@ This model was incorporated on 2022-08-18.Last packaged on 2025-10-22.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| smiles_00 | string |  | Sampled smiles 0 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_01 | string |  | Sampled smiles 1 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_02 | string |  | Sampled smiles 2 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_03 | string |  | Sampled smiles 3 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_04 | string |  | Sampled smiles 4 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_05 | string |  | Sampled smiles 5 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_06 | string |  | Sampled smiles 6 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_07 | string |  | Sampled smiles 7 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_08 | string |  | Sampled smiles 8 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
-| smiles_09 | string |  | Sampled smiles 9 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_00 | string |  | Sampled smiles 0 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_01 | string |  | Sampled smiles 1 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_02 | string |  | Sampled smiles 2 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_03 | string |  | Sampled smiles 3 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_04 | string |  | Sampled smiles 4 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_05 | string |  | Sampled smiles 5 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_06 | string |  | Sampled smiles 6 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_07 | string |  | Sampled smiles 7 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_08 | string |  | Sampled smiles 8 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
+| smi_09 | string |  | Sampled smiles 9 from a similarity search in ChEMBL17_DrugBank17_UNPD17 |
 
 _10 of 100 columns are shown_
 ### Source and Deployment
