@@ -36,7 +36,7 @@ for input_smiles in Lines:
     sorted_similarity_indices = [sim for _, sim in paired]
     data += [[sorted_smiles_list, sorted_similarity_indices]]
 
-header = [f"smiles_{i:02}" for i in range(len(smiles_list))]
+header = [f"smi_{i:02}" for i in range(len(smiles_list))]
 with open(sys.argv[2], 'w') as f:
     writer = csv.writer(f)
     writer.writerow(header)
