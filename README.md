@@ -1,6 +1,6 @@
 # Similarity search in ChEMBL, DrugBank and UNPD
 
-Given a molecule, this model for its 100 nearest neighbors, according to ECFP4 Tanimoto similarity, in the medicinal chemistry database ChEMBL17\_DrugBank17\_UNPD17. This combined database contains all the compounds from the three collections (DrugBank, ChEMBL22 and Universal natural product directory (UNPD)) with up to 17 heavy atoms. It features a total of 128k compounds. The whole ChEMBL17\_DrugBank17\_UNPD17 database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.
+Searches a combined collection of ChEMBL, DrugBank and the Universal Natural Product Database for the 100 structures closest to a query, restricted to molecules of up to 17 heavy atoms and totalling around 128,000 compounds. Merging bioactive, approved and natural product chemistry in one index means neighbours can come from any of the three, which is useful when looking for precedent across different chemical traditions. The database is queried remotely rather than bundled with the model.
 
 This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** List of 100 nearest neighbors
+- **Interpretation:** List of the 100 nearest neighbours to the query molecule across ChEMBL, DrugBank and UNPD.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
