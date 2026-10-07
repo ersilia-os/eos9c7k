@@ -1,6 +1,6 @@
 # Similarity search in ChEMBL, DrugBank and UNPD
 
-Searches a combined collection of ChEMBL, DrugBank and the Universal Natural Product Database for the 100 structures closest to a query, restricted to molecules of up to 17 heavy atoms and totalling around 128,000 compounds. Merging bioactive, approved and natural product chemistry in one index means neighbours can come from any of the three, which is useful when looking for precedent across different chemical traditions. The database is queried remotely rather than bundled with the model.
+Finds the 100 structures most similar to a query in a merged medicinal chemistry index of 128,011 molecules with at most 17 heavy atoms, assembled by Awale and colleagues from ChEMBL 22 (105,423 compounds), DrugBank (2,284) and the Universal Natural Product Database (20,302). Because bioactive, approved and natural product chemistry sit in one index, a hit may come from any of the three, which helps when looking for precedent across chemical traditions. Ranking uses ECFP4 similarity, with approximate nearest-neighbour search run on a remote server.
 
 This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** List of the 100 nearest neighbours to the query molecule across ChEMBL, DrugBank and UNPD.
+- **Interpretation:** 100 nearest neighbours by ECFP4 similarity in a 128,011-molecule ChEMBL, DrugBank and natural product index.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
