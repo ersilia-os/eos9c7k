@@ -2,7 +2,8 @@
 
 Finds the 100 structures most similar to a query in a merged medicinal chemistry index of 128,011 molecules with at most 17 heavy atoms, assembled by Awale and colleagues from ChEMBL 22 (105,423 compounds), DrugBank (2,284) and the Universal Natural Product Database (20,302). Because bioactive, approved and natural product chemistry sit in one index, a hit may come from any of the three, which helps when looking for precedent across chemical traditions. Ranking uses ECFP4 similarity, with approximate nearest-neighbour search run on a remote server.
 
-This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
+This model was incorporated on 2022-08-18.
+Last packaged on 2026-09-01.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9c7k](https://hub.docker.com/r/ersiliaos/eos9c7k)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9c7k.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9c7k.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9c7k_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9c7k_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
